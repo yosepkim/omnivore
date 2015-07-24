@@ -3,8 +3,13 @@
 Gem for consuming the Omnivore API
 
 Currently working:
-* Get stores list
-* Create ticket
+* Location
+* Table
+* Employee
+* Order Type
+* Tender Type
+* Ticket / Ticket Item /Ticket Item Modifier
+* Menu / Category / Menu Item / Modifier / Modifier Group
 
 
 ## Installation
