@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe "EthorApi::Api::Ticket" do
+describe "OmnivoreApi::Api::Ticket" do
   before(:each) do
-    @store_id = ENV['PS_ETHOR_STORE_ID']
-    @service = EthorApi::Client.new ENV['PS_ETHOR_VERSION'].to_sym, ENV['PS_ETHOR_API_KEY'], double
+    @store_id = ENV['PS_OMNIVORE_STORE_ID']
+    @service = OmnivoreApi::Client.new ENV['PS_OMNIVORE_VERSION'].to_sym, ENV['PS_OMNIVORE_API_KEY'], double
     @ticket = @service.ticket.create @store_id, { body: {order_type: 'dine_in'}}
   end
 

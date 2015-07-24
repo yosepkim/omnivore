@@ -6,9 +6,9 @@ require 'ethor_api/version'
 Gem::Specification.new do |spec|
   spec.name          = "omnivore_api"
   spec.version       = OmnivoreApi::VERSION
-  spec.authors       = ["KevinColemanInc"]
-  spec.email         = ["kevin.coleman@sparkstart.io"]
-  spec.summary       = %q{Ethor Gem for their api.}
+  spec.authors       = ["YosepKim"]
+  spec.email         = ["yk@venturebang.com"]
+  spec.summary       = %q{Omnivore Gem for their api.}
   spec.homepage      = "https://github.com/Ampersand-Labs/ethor"
   spec.license       = "MIT"
 
