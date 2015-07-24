@@ -1,0 +1,11 @@
+{
+    "customer": {
+        "email_address": "PARUL@GENAPSYS.COM",
+        "first_name":"PARUL",
+        "last_name": "KASHYAP",
+        "phone_number": {
+            "area_code": "650",
+            "number": "3301096"
+      }
+    }
+}
