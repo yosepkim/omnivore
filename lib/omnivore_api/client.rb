@@ -28,16 +28,56 @@ module OmnivoreApi
         end
     end
 
-    def store
-      OmnivoreApi::Api::Store.new(self)
+    def employee
+      OmnivoreApi::Api::Employee.new(self)
+    end
+
+    def location
+      OmnivoreApi::Api::Location.new(self)
+    end
+
+    def menu
+      OmnivoreApi::Api::Menu.new(self)
+    end
+
+    def menu_category
+      OmnivoreApi::Api::MenuCategory.new(self)
+    end
+
+    def menu_item
+      OmnivoreApi::Api::MenuItem.new(self)
+    end
+
+    def menu_modifier
+      OmnivoreApi::Api::MenuModifier.new(self)
+    end
+
+    def menu_modifier_group
+      OmnivoreApi::Api::MenuModifierGroup.new(self)
+    end
+
+    def order_type
+      OmnivoreApi::Api::OrderType.new(self)
+    end
+
+    def table
+      OmnivoreApi::Api::Table.new(self)
+    end
+
+    def tender_type
+      OmnivoreApi::Api::TenderType.new(self)
     end
 
     def ticket
       OmnivoreApi::Api::Ticket.new(self)
     end
 
-    def menu
-      OmnivoreApi::Api::Menu.new(self)
+    def ticket_item
+      OmnivoreApi::Api::TicketItem.new(self)
+    end
+
+    def ticket_item_modifier
+      OmnivoreApi::Api::TicketItemModifier.new(self)
     end
 
     def get(path, options = {})
