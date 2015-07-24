@@ -27,16 +27,6 @@ Or install it yourself as:
 
 Checkout the rspec tests for better documentation
 
-### Examples
-```ruby
-  @service = EthorApi::Client.new :sandbox, api_key, consumer_secret # :sandbox or :live
-  
-  @service.store.all # lists all stores
-
-  @service.ticket.create "HI6PIDO5JS", { body: {order_type: 'dine_in'}} # create ticket
-
-```
-
 ## Contributing
 
 1. Fork it
