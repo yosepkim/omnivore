@@ -1,6 +1,6 @@
-# EthorApi
+# OmnivoreApi
 
-Gem for consuming the Ethor API
+Gem for consuming the Omnivore API
 
 Currently working:
 * Get stores list
@@ -12,7 +12,7 @@ Currently working:
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'ethor_api'
+gem 'omnivore_api'
 ```
 
 And then execute:
@@ -21,7 +21,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install ethor_api
+    $ gem install omnivore_api
 
 ## Usage
 

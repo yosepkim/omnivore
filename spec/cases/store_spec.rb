@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe "EthorApi::Api::Store" do
+describe "OmnivoreApi::Api::Store" do
   before(:each) do
-    @service = EthorApi::Client.new ENV['PS_ETHOR_VERSION'].to_sym, ENV['PS_ETHOR_API_KEY'], double
+    @service = OmnivoreApi::Client.new ENV['PS_OMNIVORE_VERSION'].to_sym, ENV['PS_OMNIVORE_API_KEY'], double
   end
 
   it "gets a list of stores" do

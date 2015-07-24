@@ -1,12 +1,12 @@
 require 'openssl'
 
-module EthorApi
+module OmnivoreApi
   class Client
 
     API_VERSION = 'v1'
     DEFAULT_SERVERS = {
-        :sandbox => 'https://ethor-test.apigee.net',
-        :live => 'https://ethor-prod.apigee.net'
+        :sandbox => 'https://omnivore-test.apigee.net',
+        :live => 'https://omnivore-prod.apigee.net'
       }
 
     attr_reader :consumer_key, :consumer_secret, :server, :connection
@@ -29,15 +29,15 @@ module EthorApi
     end
 
     def store
-      EthorApi::Api::Store.new(self)
+      OmnivoreApi::Api::Store.new(self)
     end
 
     def ticket
-      EthorApi::Api::Ticket.new(self)
+      OmnivoreApi::Api::Ticket.new(self)
     end
 
     def menu
-      EthorApi::Api::Menu.new(self)
+      OmnivoreApi::Api::Menu.new(self)
     end
 
     def get(path, options = {})

@@ -1,8 +1,8 @@
-module EthorApi
+module OmnivoreApi
   module Api
     class Store < Base
       def all
-        @client.get("/stores").body
+        @client.get("/locations").body
       end
     end
   end

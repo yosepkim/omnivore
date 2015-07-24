@@ -4,8 +4,8 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'ethor_api/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "ethor_api"
-  spec.version       = EthorApi::VERSION
+  spec.name          = "omnivore_api"
+  spec.version       = OmnivoreApi::VERSION
   spec.authors       = ["KevinColemanInc"]
   spec.email         = ["kevin.coleman@sparkstart.io"]
   spec.summary       = %q{Ethor Gem for their api.}

@@ -1,4 +1,4 @@
-module EthorApi
+module OmnivoreApi
   module Api
     class Base
 
