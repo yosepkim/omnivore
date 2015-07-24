@@ -15,6 +15,6 @@ describe "OmnivoreApi::Client" do
 
   it "has an attr_reader for server" do
     service = OmnivoreApi::Client.new :sandbox, double, double
-    expect(service.server).to eq('https://ethor-test.apigee.net')
+    expect(service.server).to eq('https://omnivore-test.apigee.net')
   end
 end

@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["YosepKim"]
   spec.email         = ["yk@venturebang.com"]
   spec.summary       = %q{Omnivore Gem for their api.}
-  spec.homepage      = "https://github.com/Ampersand-Labs/ethor"
+  spec.homepage      = "https://github.com/Ampersand-Labs/omnivore"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

@@ -3,7 +3,7 @@ module OmnivoreApi::Api::RestUtils
   private 
 
     DEFAULT_SERVERS = {
-        :sandbox => 'ethor-test.apigee.net/v1',
+        :sandbox => 'omnivore-test.apigee.net/v1',
         :live => 'api.omnivore.io/0.1'
       }
 
