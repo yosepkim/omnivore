@@ -2,21 +2,15 @@ require 'spec_helper'
 
 describe "OmnivoreApi::Api::Ticket" do
   before(:each) do
-    @store_id = ENV['PS_OMNIVORE_STORE_ID']
-    @menu_item_id = ENV['PS_OMNIVORE_MENU_ITEM_ID']
-    @service = OmnivoreApi::Client.new ENV['PS_OMNIVORE_VERSION'].to_sym, ENV['PS_OMNIVORE_API_KEY'], double
+    @location_id = 'qizKxLc7s'
+    api_key = 'd4c6b7e87d9942f28fcad1deadcede0f'
+    @service = OmnivoreApi::Client.new api_key
   end
 
-  it "gets a menu item" do
-    menu_item = @service.menu.find_menu_item @store_id, @menu_item_id
+  it "gets menu" do
+    menu_item = @service.menu.retrieve @location_id
+    puts menu_item
     expect(menu_item).to be
     expect(menu_item["menu_item"]["menu_item_id"]).to eq @menu_item_id
   end
-
-  it "gets the menu" do
-    menu_item = @service.menu.all @store_id
-    expect(menu_item).to be
-    expect(menu_item["menu"]).to be
-  end
-
 end

@@ -3,18 +3,14 @@ require 'openssl'
 module OmnivoreApi
   class Client
 
-    API_VERSION = 'v1'
-    DEFAULT_SERVERS = {
-        :sandbox => 'https://omnivore-test.apigee.net',
-        :live => 'https://omnivore-prod.apigee.net'
-      }
+    API_VERSION = '0.1'
+    DEFAULT_SERVER = 'https://api.omnivore.io/'
 
-    attr_reader :consumer_key, :consumer_secret, :server, :connection
+    attr_reader :api_key, :server, :connection
 
-    def initialize(server, consumer_key = nil, consumer_secret = nil)
-        @consumer_key = consumer_key
-        @consumer_secret = consumer_secret
-        @server = DEFAULT_SERVERS[server]
+    def initialize(api_key)
+        @api_key = api_key
+        @server = DEFAULT_SERVER
 
         @connection = Faraday.new({ url: @server, ssl: { verify: true }, request: {} }) do |builder|
           # response
@@ -116,6 +112,7 @@ module OmnivoreApi
         req.body = body.nil? ? nil : body.to_json
         req.options.timeout = timeout
         req.headers['Content-Type'] = 'application/json'
+        req.headers['Api-Key'] = api_key
       end
     end
   end
